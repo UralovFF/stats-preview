@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Lexend+Deca:100,200,300,regular,500,600,700,800,900);
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+html, body{
+    height: 100%;
+    background: #0A0C1C;
+    
+    font-family: "Inter", sans-serif;
+}
+
+.wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.wrapper__content{
+    max-width: 1110px;
+    display: flex;
+    align-items: center;
+    
+    background: #1b1937;
+    box-shadow: 0 20px 20px -10px rgba(23, 25, 41, 0.2);
+    border-radius: 8px;
+}
+
+.wrapper__content__info{
+    margin: 0 6rem 0 4.5rem;
+}
+
+.info__title{
+    margin-bottom: 25px;
+    max-width: 400px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 122%;
+}
+
+.info__title span{
+    color: #ab5cdb;
+}
+
+.info__text{
+    margin-bottom: 72px;
+    max-width: 360px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 167%;
+    opacity: 0.75;
+}
+
+.achievements{
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.achievements__card h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.achievements__card p {
+    font-family: "Lexend Deca", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    line-height: 208%;
+    letter-spacing: 0.08em;
+    opacity: 0.6;
+}
+
+.wrapper__content__img{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.wrapper__content__img-mobile{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .wrapper{
+        height: max-content;
+        padding: 88px 24px;
+    }
+    
+    .wrapper__content{
+        width: 32.5rem;
+        flex-direction: column-reverse;        
+    }
+    
+    .wrapper__content__info{
+        margin: 0 2rem 2rem 2rem;
+    }
+    
+    .info__title{
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: clamp(28px, 4vw, 36px);
+        line-height: 114%;
+    }
+    
+    .info__text{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .achievements{
+        text-align: center;
+        max-width: 100%;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    
+    .wrapper__content__img{
+        display: none;
+    }
+
+    .wrapper__content__img-mobile{
+        margin-bottom: 40px;
+        width: 100%;
+        display: block;
+    }
+
+    .wrapper__content__img-mobile img{
+        width: 100%;
+    }
+}
